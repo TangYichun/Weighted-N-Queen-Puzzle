@@ -27,7 +27,7 @@ The weight will store in a separate list.
 	Since simulated annealing always expand node randomly and the effective branch is always 1 (whether 	it choose to move or not), so for Simulated Annealing, the effective branch = 1
 4. temp.g_x (A*), final_cost (Simulated Annealing) = the cost for moving the queen to the solution
 5. Sequence of move: <br />
-a. list_minus(state, pos) (A*): since a* has to expand every node, we can’t output every single move sequence.
+a. list_minus(state, pos) (A*): since a* has to expand every node, we don't want to output every single move sequence, but we can visualize it by print(next_state.state).
 	Also, since the output of move might contain negative number. In the program, negative number means the queen goes up, positive means queen goes down.<br />
 b. print("current pos and hvalue", pos, choice_heuristic(pos, weight, hchoice)) — Simulated Annealing (output every move that it choose to go, dismiss if it choose to stay in the current position)
 
