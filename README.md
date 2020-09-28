@@ -1,8 +1,5 @@
 # CS534 Homework Assignment - N-Queen Problem
 
-### Yichun Tang (A*)
-### Yuzhi Ji (Simulated Annealing)
-
 
 ## Initial state define:
 
